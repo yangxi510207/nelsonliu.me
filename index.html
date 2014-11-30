@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<head>
+  <!-- Favicon Links -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
-    <!-- Load webcomponents.min.js for polyfill support. -->
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <!-- Load webcomponents.min.js for polyfill support. -->
+  <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 
-    <!-- Use an HTML Import to bring in the element. -->
-    <link rel="import" href="bower_components/core-elements/core-elements.html">
-    <link rel="import" href="bower_components/paper-elements/paper-elements.html">
+  <!-- Use an HTML Import to bring in the element. -->
+  <link rel="import" href="bower_components/core-elements/core-elements.html">
+  <link rel="import" href="bower_components/paper-elements/paper-elements.html">
 
-    <!-- import CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- import CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  </head>
-  <body>
-    <core-scaffold>
+</head>
+<body>
+  <core-scaffold id="scaffold">
 
-      <core-header-panel navigation flex>
-        <core-toolbar id="navheader">
-          <span>Menu</span>
-        </core-toolbar>
-        <core-menu>
-          <core-item label="One"></core-item>
-          <core-item label="Two"></core-item>
-        </core-menu>
-      </core-header-panel>
+    <core-header-panel navigation flex>
+      <core-toolbar id="menuhead">
+        <span>Nelson Liu</span>
+      </core-toolbar>
+      <core-menu>
+        <core-item label="One"></core-item>
+        <core-item label="Two"></core-item>
+    </core-menu>
+  </core-header-panel>
 
-      <span tool>Title</span>
+  <core-toolbar id="pagehead" tool flex>
+    <div flex>About Me</div>
+  </core-toolbar>
 
-      <div class="content">
-        If drawer is hidden, press button to display drawer.
-      </div>
-    </core-scaffold>
-  </body>
+  <div class="content">
+    content?
+  </div>
+
+</core-scaffold>
+</body>
 </html>

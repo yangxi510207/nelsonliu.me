@@ -1,9 +1,21 @@
 body {
   font-family: sans-serif;
+  font-weight: 300;
+  font-color: black;
 }
-#navheader {
-  background-color: #56BA89;
+
+body /deep/ core-toolbar {
+  background-color: #329ebf;
 }
+
+#menuhead{
+  background-color: #EEEEEE;
+}
+
+core-header-panel {
+  background-color: #EEEEEE;
+}
+
 .content {
   padding: 20px;
 }
