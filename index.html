@@ -3,67 +3,129 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta property="og:url" content="http://www.nelsonliu.me" />
-    <meta property="og:title" content="Nelson Liu | Developer based in Orange County, California" />
-    <meta property="og:description" content="My name is Nelson Liu, and I love building things that matter." />
-    <meta property="og:image" content="http://www.nelsonliu.me/img/me.jpg" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="My name is Nelson Liu, and I love building things that matter.">
-    <meta name="author" content="Nelson Liu">
+  <meta charset="utf-8">
+  <meta property="og:url" content="http://www.nelsonliu.me" />
+  <meta property="og:title" content="Nelson Liu | Developer based in Orange County, California" />
+  <meta property="og:description" content="My name is Nelson Liu, and I love building things that matter." />
+  <meta property="og:image" content="http://www.nelsonliu.me/img/me.jpg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My name is Nelson Liu, and I love building things that matter.">
+  <meta name="author" content="Nelson Liu">
 
-    <title>Nelson Liu | Developer based in Orange County, California</title>
+  <title>Nelson Liu | Developer based in Orange County, California</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- Favicon Stuff -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 
-    <!-- Bootstrap Material Design CSS -->
-    <link href="/bower_components/bootstrap-material-design/dist/css/material-wfont.min.css" rel="stylesheet" type="text/css">
-    <link href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" type="text/css">
-    <link href="/bower_components/bootstrap-material-design/dist/css/material.min.css" rel="stylesheet" type="text/css">
 
-    <!-- SweetAlert CSS -->
-    <link href="/bower_components/sweetalert/lib/sweet-alert.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap Core CSS -->
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap Material Design CSS -->
+  <link href="/bower_components/bootstrap-material-design/dist/css/material-wfont.min.css" rel="stylesheet" type="text/css">
+  <link href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" type="text/css">
+  <link href="/bower_components/bootstrap-material-design/dist/css/material.min.css" rel="stylesheet" type="text/css">
+
+  <!-- SweetAlert CSS -->
+  <link href="/bower_components/sweetalert/lib/sweet-alert.css" rel="stylesheet" type="text/css">
+
+  <!-- FontAwesome CSS -->
+  <link href="/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom Page CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- jQuery Version 1.11.0 -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Material Design JS -->
+  <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+
+  <!--SweetAlert JS -->
+  <script src="/bower_components/sweetalert/lib/sweet-alert.min.js"></script>
+
+  <script src="js/scripts.js"></script>
 
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap Material Design JS -->
-    <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
-    <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
-
-    <!--SweetAlert JS -->
-    <script src="/bower_components/sweetalert/lib/sweet-alert.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-      $.material.init();
-    });
-    </script>
+  <script>
+  $(document).ready(function() {
+    $.material.init();
+  });
+  </script>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row clearfix">
-      <div class="col-md-2 column">
-        <h1>You can add your site here.</h1>
-        <p>hello there</p>
-      </div>
-      <div class="col-md-10 column">
-        <p class="bs-component">
-          <a href="javascript:void(0)" class="btn btn-default">Default</a>
-          <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
-          <a href="javascript:void(0)" class="btn btn-success">Success</a>
-          <a href="javascript:void(0)" class="btn btn-info">Info</a>
-          <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
-          <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
-          <a href="javascript:void(0)" class="btn btn-link">Link</a>
-        </p>
+  <div class="wrapper">
+    <div class="box">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+
+        <!-- sidebar -->
+        <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+          <div id = "logoimage">
+            <img src="/img/logo.png" style = "height: 100% ; width: 80% ; display:block; padding-left: 8%">
+          </div>
+          <hr id = "pictureHR">
+          <ul class="nav">
+            <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+          </ul>
+
+          <ul class="nav hidden-xs" id="lg-menu">
+            <li id="about"><a href="#featured"><i class="fa fa-child"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</a></li>
+            <hr>
+            <li id="skills"><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read About My Skillset</a></li>
+            <hr>
+            <li  id="projects"><a href="#stories"><i class="fa fa-flask"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check Out What I'm Up To</a></li>
+            <hr>
+            <li id="resume"><a href="#"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View My Resume</a></li>
+            <hr>
+            <li id="connect"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect With Me</a></li>
+            <hr>
+          </ul>
+
+
+          <!-- tiny only nav-->
+          <ul class="nav visible-xs" id="xs-menu">
+            <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+            <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
+            <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
+            <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+          </ul>
+
+        </div>
+        <!-- /sidebar -->
+
+        <!-- main right col -->
+        <div class="column col-sm-10 col-xs-11" id="main">
+          <div class="padding">
+            <h1>hello goodbye </h1>
+          </div>
+
+
+
+          <!-- /main -->
+
+        </div>
       </div>
     </div>
   </div>
