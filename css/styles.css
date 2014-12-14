@@ -3,12 +3,62 @@ html, body {
   height: 100%;
 }
 
+.menuitemhide{
+  display:none;
+}
+
+.menuitemshow{
+  display:inline;
+}
 
 a {
   color:#222222;
-  display: block;
 
 }
+
+.aboutbanner{
+  background-color: #536DFE;
+}
+
+.nomargin{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.banner{
+  position: relative;
+  height: 20%;
+  min-height: 200px;
+  width: 100%;
+  color: white;
+  font-weight: 300;
+}
+
+.tagline{
+  color: #BAC4FF
+}
+.contentdiv{
+  height:100%;
+  font-size: 16px;
+  font-family: "RobotoDraft",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  color: #444;
+}
+
+.bannerpadding{
+  position: relative;
+  padding-left: 3%;
+  padding-top: 3%
+}
+
+.contentpadding{
+  padding-left: 3%;
+  padding-top: 2%;
+  width: 80%;
+
+}
+
 
 a:hover {
   text-decoration:none;
@@ -38,7 +88,7 @@ hr {
 #pictureHR{
   border-color:#cecece;
   margin-top: 13px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 
 }
 
@@ -143,7 +193,7 @@ hr {
 /* bootstrap overrides */
 
 h1,h2,h3 {
-  font-weight:800;
+  font-weight:300;
 }
 
 .navbar-toggle, .close {
