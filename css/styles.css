@@ -1,6 +1,6 @@
 /* custom template */
 html, body {
-   height: 100%;
+  height: 100%;
 }
 
 
@@ -43,75 +43,75 @@ hr {
 }
 
 .wrapper, .row {
-   height: 100%;
-   margin-left:0;
-   margin-right:0;
+  height: 100%;
+  margin-left:0;
+  margin-right:0;
 }
 
 .wrapper:before, .wrapper:after,
 .column:before, .column:after {
-    content: "";
-    display: table;
+  content: "";
+  display: table;
 }
 
 .wrapper:after,
 .column:after {
-    clear: both;
+  clear: both;
 }
 
 .column {
-    height: 100%;
-    overflow: auto;
-    *zoom:1;
+  height: 100%;
+  overflow: auto;
+  *zoom:1;
 }
 
 .column .padding {
-    padding: 20px;
+  padding: 20px;
 }
 
 .full{
-	padding-top:70px;
+  padding-top:70px;
 }
 
 .box {
-  	bottom: 0; /* increase for footer use */
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color:#EEEEEE;
+  bottom: 0; /* increase for footer use */
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color:#EEEEEE;
   /*
-    background-image:url('/assets/example/bg_suburb.jpg');
-    background-size:cover;
-    background-attachment:fixed;
+  background-image:url('/assets/example/bg_suburb.jpg');
+  background-size:cover;
+  background-attachment:fixed;
   */
 }
 
 .divider {
-	margin-top:32px;
+  margin-top:32px;
 }
 
 
 #main {
-   background-color:#FFFFFF;
-   padding-left:0;
-   padding-right:0;
+  background-color:#FFFFFF;
+  padding-left:0;
+  padding-right:0;
 }
 #main .img-circle {
-   margin-top:18px;
-   height:70px;
-   width:70px;
+  margin-top:18px;
+  height:70px;
+  width:70px;
 }
 
 #sidebar {
-    padding:0px;
-	padding-top:15px;
+  padding:0px;
+  padding-top:15px;
 }
 
 #sidebar, #sidebar a, #sidebar-footer a {
-    color:#424242;
-    font-size: 16px;
-    background-color:transparent;
+  color:#424242;
+  font-size: 16px;
+  background-color:transparent;
 }
 
 .nav>li>a{
@@ -143,24 +143,24 @@ hr {
 /* bootstrap overrides */
 
 h1,h2,h3 {
-   font-weight:800;
+  font-weight:800;
 }
 
 .navbar-toggle, .close {
-	outline:0;
+  outline:0;
 }
 
 .navbar-toggle .icon-bar {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:#3B5999;
-    color:#fffffe;
+  background-color:#3B5999;
+  color:#fffffe;
 }
 .btn-default {
-    color:#666666;
-    text-shadow:0 0 1px rgba(0,0,0,.3);
+  color:#666666;
+  text-shadow:0 0 1px rgba(0,0,0,.3);
 }
 .form-control {
 
@@ -168,16 +168,16 @@ h1,h2,h3 {
 
 .panel textarea, .well textarea, textarea.form-control
 {
-   resize: none;
+  resize: none;
 }
 
 .badge{
-   color:#3B5999;
-   background-color:#fff;
+  color:#3B5999;
+  background-color:#fff;
 }
 .badge:hover, .badge-inverse{
-   background-color:#3B5999;
-   color:#fff;
+  background-color:#3B5999;
+  color:#fff;
 }
 
 .jumbotron {
@@ -201,29 +201,29 @@ h1,h2,h3 {
 }
 
 .col-sm-9.full {
-    width: 100%;
+  width: 100%;
 }
 
 .modal-header, .modal-footer {
-	background-color:#f2f2f2;
-    font-weight:800;
-    font-size:12px;
+  background-color:#f2f2f2;
+  font-weight:800;
+  font-size:12px;
 }
 
 .modal-footer i, .well i {
-    font-size:20px;
-    color:#c0c0c0;
+  font-size:20px;
+  color:#c0c0c0;
 }
 
 .modal-body {
-	padding:0px;
+  padding:0px;
 }
 
 .modal-body textarea.form-control
 {
-   resize: none;
-   border:0;
-   box-shadow:0 0 0;
+  resize: none;
+  border:0;
+  box-shadow:0 0 0;
 }
 
 small.text-muted {
@@ -238,7 +238,7 @@ small.text-muted {
   }
 
   .full{
-	padding-top:20px;
+    padding-top:20px;
   }
 
 
@@ -251,9 +251,9 @@ small.text-muted {
 
 
 /*
- * off canvas sidebar
- * --------------------------------------------------
- */
+* off canvas sidebar
+* --------------------------------------------------
+*/
 @media screen and (max-width: 768px) {
   .row-offcanvas {
     position: relative;

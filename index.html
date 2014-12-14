@@ -68,9 +68,9 @@
 
 
   <script>
-  $(document).ready(function() {
-    $.material.init();
-  });
+    $(document).ready(function() {
+      $.material.init();
+    });
   </script>
 </head>
 
@@ -91,25 +91,26 @@
           </ul>
 
           <ul class="nav hidden-xs" id="lg-menu">
-            <li id="about"><a href="#featured"><i class="fa fa-child"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</a></li>
+            <li id="about" class="about-active"><a href="#"><i class="fa fa-child"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</a></li>
             <hr>
-            <li id="skills"><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read About My Skillset</a></li>
+            <li id="skills"><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills</a></li>
             <hr>
-            <li  id="projects"><a href="#stories"><i class="fa fa-flask"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check Out What I'm Up To</a></li>
+            <li  id="projects"><a href="#"><i class="fa fa-flask"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</a></li>
             <hr>
-            <li id="resume"><a href="#"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View My Resume</a></li>
+            <li id="resume"><a href="#"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume</a></li>
             <hr>
-            <li id="connect"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connect With Me</a></li>
+            <li id="connect"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
             <hr>
           </ul>
 
 
           <!-- tiny only nav-->
           <ul class="nav visible-xs" id="xs-menu">
-            <li><a href="#featured" class="text-center"><i class="glyphicon glyphicon-list-alt"></i></a></li>
-            <li><a href="#stories" class="text-center"><i class="glyphicon glyphicon-list"></i></a></li>
-            <li><a href="#" class="text-center"><i class="glyphicon glyphicon-paperclip"></i></a></li>
-            <li><a href="#" class="text-center"><i class="glyphicon glyphicon-refresh"></i></a></li>
+            <li id="about-xs" class="about-active"><a href="#" class="text-center"><i class="fa fa-child"></i></a></li>
+            <li id="skills-xs"><a href="#" class="text-center"><i class="fa fa-wrench"></i></a></li>
+            <li id="projects-xs"><a href="#" class="text-center"><i class="fa fa-flask"></i></a></li>
+            <li id="resume-xs"><a href="#" class="text-center"><i class="fa fa-clipboard"></i></a></li>
+            <li id="connect-xs"><a href="#" class="text-center"><i class="fa fa-comments"></i></a></li>
           </ul>
 
         </div>
@@ -118,7 +119,22 @@
         <!-- main right col -->
         <div class="column col-sm-10 col-xs-11" id="main">
           <div class="padding">
-            <h1>hello goodbye </h1>
+            <div class="contentdiv" id="aboutcontent" >
+              about
+            </div>
+            <div class="contentdiv" id="skillscontent" style="display:none;">
+              skills
+            </div>
+            <div class="contentdiv" id="projectscontent" style="display:none;">
+              projects
+            </div>
+            <div class="contentdiv" id="resumecontent" style="display:none;">
+              resume
+            </div>
+            <div class="contentdiv" id="connectcontent" style="display:none;">
+              connect
+            </div>
+
           </div>
 
 
