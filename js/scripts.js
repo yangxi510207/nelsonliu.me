@@ -59,11 +59,6 @@ $(document).ready(function(){/* off-canvas sidebar toggle */
     $('#about').removeClass('about-active');
     $('#connect').removeClass('connect-active');
 
-    $("#aboutcontent").css({"display":"none"});
-    $("#skillscontent").css({"display":"none"});
-    $("#projectscontent").css({"display":"none"});
-    $("#resumecontent").fadeIn('slow');
-    $("#connectcontent").css({"display":"none"});
   });
 
   $('#connect').click(function() {

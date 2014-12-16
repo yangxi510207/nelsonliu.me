@@ -20,6 +20,9 @@ a {
   background-color: #536DFE;
 }
 
+.skillbanner{
+  background-color: #47b7e6
+}
 .nomargin{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -34,9 +37,6 @@ a {
   font-weight: 300;
 }
 
-.tagline{
-  color: #BAC4FF
-}
 .contentdiv{
   height:100%;
   font-size: 16px;
@@ -59,6 +59,12 @@ a {
 
 }
 
+.chartpadding{
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-right: 3%;
+}
+
 
 a:hover {
   text-decoration:none;
@@ -70,7 +76,7 @@ a:hover {
   color:#47b7e6!important
 }
 .nav .projects-active a {
-  color:#7986CB!important
+  color:#009587!important
 }
 .nav .resume-active a {
   color:#FF4080!important

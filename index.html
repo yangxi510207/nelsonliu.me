@@ -81,7 +81,7 @@
 
 
         <!-- sidebar -->
-        <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+        <div class="column col-sm-2 col-xs-1 sidebar-offcanvas " id="sidebar">
           <div id = "logoimage">
             <img src="/img/logo.png" style = "height: 100% ; width: 80% ; display:block; padding-left: 8%">
           </div>
@@ -90,18 +90,19 @@
             <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
           </ul>
 
-          <ul class="nav hidden-xs" id="lg-menu">
+          <ul class="nav hidden-xs " id="lg-menu">
             <li id="about" class="withripple about-active active"><a href="#"><i class="fa fa-child"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</a></li>
             <hr class="nomargin">
             <li class="withripple" id="skills"><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills</a></li>
             <hr class="nomargin">
             <li class="withripple" id="projects"><a href="#"><i class="fa fa-flask"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</a></li>
             <hr class="nomargin">
-            <li class="withripple" id="resume"><a href="#"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume</a></li>
-            <hr class="nomargin">
             <li class="withripple" id="connect"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
             <hr class="nomargin">
+            <li class="withripple" id="resume"><a href="/files/N_LIU_RESUME.pdf" target="_blank"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume</a></li>
+            <hr class="nomargin">
           </ul>
+
 
 
           <!-- tiny only nav-->
@@ -121,11 +122,11 @@
 
           <!-- content for the "about me page" -->
           <div class="contentdiv" id="aboutcontent" >
-            <div class="aboutbanner banner">
+            <div class="aboutbanner banner shadow-z-2">
               <div class="bannerpadding">
                 <h1>Hi, I'm Nelson.</h1>
               </br>
-              <p class="tagline">I love building cutting-edge software and hardware projects.</p>
+              <p style="color: #BAC4FF" >I love building cutting-edge software and hardware projects.</p>
             </div>
           </div>
           <div class="contentpadding">
@@ -161,33 +162,160 @@
         <!-- content for the skillset page -->
 
         <div class="contentdiv" id="skillscontent" style="display:none;">
+          <div class="skillbanner banner shadow-z-2">
+            <div class="bannerpadding">
+              <h1>My Skillset</h1>
+            </br>
+            <p style = "color: white;" >What I'm great at, what I'm progressing on, and what I'm starting to learn.</p>
+          </div>
+        </div>
+          <div class="chartpadding">
+          <h3>Web Development</h3>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4" style="padding-left: 0px;">
               <div class="panel panel-default">
-                <div class="panel-heading">Panel heading</div>
+                <div class="panel-heading">Back-End Development</div>
                 <div class="panel-body">
-                  Panel content
+                  Flask
+                  <span class="label label-success" style="float:right;">Proficient</span>
+                </div>
+                <hr>
+                <div class="panel-body">
+                  Ruby on Rails
+                  <span class="label label-warning" style="float:right;">Intermediate</span>
+                </div>
+                <hr>
+                <div class="panel-body">
+                  PHP
+                  <span class="label label-danger" style="float:right;">Beginner</span>
                 </div>
               </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-4" style="padding-left: 0px;">
             <div class="panel panel-default">
-              <div class="panel-heading">Panel heading</div>
+              <div class="panel-heading">Front-End Development</div>
               <div class="panel-body">
-                Panel content
+                HTML
+                <span class="label label-success" style="float:right;">Proficient</span>
+
+              </div>
+              <hr>
+              <div class="panel-body">
+                CSS
+                <span class="label label-success" style="float:right;">Proficient</span>
+
+              </div>
+              <hr>
+              <div class="panel-body">
+                JavaScript
+                <span class="label label-success" style="float:right;">Proficient</span>
+
+              </div>
+              <hr>
+              <div class="panel-body">
+                JQuery
+                <span class="label label-success" style="float:right;">Proficient</span>
+
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <div class="panel panel-default">
+              <div class="panel-heading">Databases</div>
+              <div class="panel-body">
+                SQL
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                MongoDB
+                <span class="label label-danger" style="float:right;">Beginner</span>
               </div>
             </div>
           </div>
         </div>
+
+        <h3>Programming Languages</h3>
+        <div class="row">
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <div class="panel panel-default">
+              <div class="panel-heading">Desktop</div>
+              <div class="panel-body">
+                Java
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                Python
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                R
+                <span class="label label-danger" style="float:right;">Beginner</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <div class="panel panel-default">
+              <div class="panel-heading">Mobile</div>
+              <div class="panel-body">
+                Android
+                <span class="label label-danger" style="float:right;">Beginner</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                iOS
+                <span class="label label-danger" style="float:right;">Beginner</span>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-sm-4" style="padding-left: 0px;">
+            <div class="panel panel-default">
+              <div class="panel-heading">Miscellaneous</div>
+              <div class="panel-body">
+                Bash
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                Git / SVN
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                Photoshop
+                <span class="label label-success" style="float:right;">Proficient</span>
+              </div>
+              <hr>
+              <div class="panel-body">
+                UI / UX Design
+                <span class="label label-warning" style="float:right;">Intermediate</span>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+      </div>
       </div>
 
 
         <div class="contentdiv" id="projectscontent" style="display:none;">
           projects
+          <div class="panel panel-default">
+            <div class="panel-body">
+              Basic panel
+            </div>
+          </div>
         </div>
+        <!-- Not using this
         <div class="contentdiv" id="resumecontent" style="display:none;">
           resume
         </div>
+      -->
         <div class="contentdiv" id="connectcontent" style="display:none;">
           connect
         </div>
