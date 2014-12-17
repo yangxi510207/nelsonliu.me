@@ -23,6 +23,11 @@ a {
 .skillbanner{
   background-color: #47b7e6
 }
+
+.projectbanner{
+  background-color: #009587;
+}
+
 .nomargin{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -35,6 +40,17 @@ a {
   width: 100%;
   color: white;
   font-weight: 300;
+}
+
+.clear{
+  clear:both;
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
 }
 
 .contentdiv{
@@ -82,7 +98,7 @@ a:hover {
   color:#FF4080!important
 }
 .nav .connect-active a {
-  color:#EB5A4F!important
+  color:#FF9800!important
 }
 hr {
   border-color:#cecece;
@@ -291,6 +307,10 @@ small.text-muted {
 
   .column .padding {
     padding: 7px;
+  }
+
+  .alignright{
+    float: left;
   }
 
   .full{
