@@ -145,4 +145,13 @@ $(document).ready(function(){/* off-canvas sidebar toggle */
     $("#connectcontent").fadeIn('slow');
   });
 
+  $(".hoverpanel").hover(
+    function () {
+      $(this).addClass("shadow-z-2");
+    },
+    function () {
+      $(this).removeClass("shadow-z-2");
+    }
+  );
+
 });
