@@ -154,5 +154,8 @@ $(document).ready(function(){/* off-canvas sidebar toggle */
     }
   );
 
+  cheet('v i n a y p a u l i s c a n c e r o u s', function () {
+    window.open('/img/cancer.png','mywindow');
+  });
 
 });
