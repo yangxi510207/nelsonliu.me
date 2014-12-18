@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/nelsonliu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://nelsonliu.me
+  * I am nelsonliu (https://keybase.io/nelsonliu) on keybase.
+  * I have a public key with fingerprint 4340 C8C5 3409 9A2E DA80  6BE1 95E2 A98A 3A83 7805
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "4340c8c534099a2eda806be195e2a98a3a837805",
+            "host": "keybase.io",
+            "key_id": "95e2a98a3a837805",
+            "uid": "a85ddea603d8775b85c9038bac69b300",
+            "username": "nelsonliu"
+        },
+        "service": {
+            "hostname": "nelsonliu.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1408949460,
+    "expire_in": 157680000,
+    "prev": "acea5cfabd305865c265a837f6309111c69bb929550dea0e09ce6a390a8b42ab",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.3.1
+Comment: https://keybase.io/crypto
+
+yMLvAnicO8LLzMDFOPXRyi6r5gpWxtMHPpcyBP+6c6VaKSk/pVLJqlopOxVMpWXm
+pacWFRRl5pUoWSmZGJsYJFskmwIpS8tEo9SURAsDs6RUQ0vTVKNES4tE40QLY3ML
+A1MlHaWM/GKQDqAxSYnFqXqZ+UAxICc+MwUoikV9KVgi0cI0JSU10czAOMXC3Nw0
+ycI02dLA2CIpMdnMMsnYwACksDi1KC8xNxWoOi81pzg/LyezVKlWRwkoXJaZnApy
+NMhudCV6QK6OUkFRfkl+cn4OUCajpKTACqSxpLIApLI8NSkeakZ8UmZeCtDjQA1l
+qUXFmfl5SlaGQJXJJZkgQw1NDCwsTSxNzAx0lFIrCjKLUuMzQSpMzc0sDIAAZE1q
+Gcg3yamJpslpiUkpxgamFmamyUZmpiAfp5kZG1gaGhqCPJVkaWRpamoA9LRBqoFl
+cqpZorGlQaJFkolRYpISyFeFeflAs42B7kxMB5pZnJmel1hSWpSqVHvoYAwLAyMX
+AxsrEyjuGLg4BWAxungW///KZFO2Oz12FqtC7p2edXRi4eZpF+8fOxeaNXP1pJA9
+e55KJSZ3XE+cfPCJ8RavNRcWcN80Svje1mKeaeHB16Bh15t/xsorL7qHSTZ/4oU9
+6usuOH079GgF4/Ksad/+La1NuNV7TpSr/aH2Npn+nXdEZJhOmR4sbL7J8urNyosT
+k0+Unj51m2W3tk5IwYYXwrUiHcXs13anvCkJ4bHfFPB+Wsm6z3IuvyWFd7y4UMK7
+78DrYp6m/T7vbrw76PVH8varbd1vz1V7JYdPZuITPnLp96HcmM9faxkOTn/uW83x
+986l/DaTbrN/klWHVK8lpR373l/zl/fczBAfv9qtDGdOl51K4VUReDhv6nqrL8cS
+mI9N7TZ3uhex7XXfkWvcPnsC1foS9t6X+bB9UvHRhdeFWlbpv2ndeO+0EXeRwY0n
+BdWX0y0Of7250T5STq9alY+N90eA6cSu0x9CAyqyplpacwp9mV2rpPQ9ZFLgAa19
+dmvzuo14D3t/rPvcHf+Qu0zF4V9LS1WL463lgl8VpY7E7n2W7c3S/FagZK96AMuL
+U8Weuz7G2S66Z1P3IjCwRWrykRapnB0Zq1WWuG9tznXmWrq97X3fhPAEMYPV//+t
+N52tv5idbZLMpncXbF95RIYaxIRNMpLtkYm/p3ciP/RY/kmhayt5agQNuNwex0Wq
+bVeSYp1w8aO8SHvL1XTxiV9mzuaf4a306PyVK2IA7lWZ7A==
+=ZzwH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nelsonliu
+
+==================================================================
