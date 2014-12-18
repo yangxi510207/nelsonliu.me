@@ -2,6 +2,13 @@
 html, body {
   height: 100%;
 }
+
+#aboutcontent a:hover {
+  color: #536DFE;
+  text-decoration: none;
+}
+
+
 .cardcontainer {
   position: relative;
   -webkit-perspective: 600px;
@@ -107,11 +114,15 @@ a {
 }
 
 .skillbanner{
-  background-color: #47b7e6
+  background-color: #47b7e6;
 }
 
 .projectbanner{
   background-color: #009587;
+}
+
+.connectbanner{
+  background-color: #455A64;
 }
 
 .nomargin{
@@ -167,6 +178,9 @@ a {
   padding-right: 3%;
 }
 
+.socialcard{
+}
+
 
 a:hover {
   text-decoration:none;
@@ -184,7 +198,7 @@ a:hover {
   color:#FF4080!important
 }
 .nav .connect-active a {
-  color:#FF9800!important
+  color:#455A64!important
 }
 hr {
   border-color:#cecece;
