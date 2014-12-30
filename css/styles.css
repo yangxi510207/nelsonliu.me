@@ -290,6 +290,12 @@ hr {
   padding: 10px 8%;
 }
 
+#sidebar-footer {
+  position:absolute;
+  bottom:5px;
+  padding:5px;
+}
+
 .logo {
   display:block;
   padding:3px;
