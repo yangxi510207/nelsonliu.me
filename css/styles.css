@@ -104,13 +104,13 @@ html, body {
   display:inline;
 }
 
-a {
-  color:#222222;
-
-}
 
 .aboutbanner{
   background-color: #536DFE;
+}
+
+.blogbanner{
+  background-color: #3f51b5;
 }
 
 .skillbanner{
@@ -172,6 +172,12 @@ a {
 
 }
 
+.blogcontentpadding{
+  padding-left: 3%;
+  padding-top: 2%;
+  width: 95%;
+}
+
 .chartpadding{
   padding-left: 3%;
   padding-top: 2%;
@@ -183,7 +189,7 @@ a {
 
 
 a:hover {
-  text-decoration:none;
+  text-decoration:underline;
 }
 .nav .about-active a {
   color:#536DFE!important
