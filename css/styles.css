@@ -206,6 +206,8 @@ a:hover {
 .nav .connect-active a {
   color:#455A64!important
 }
+
+
 hr {
   border-color:#cecece;
   margin-top: 3px;
@@ -294,6 +296,11 @@ hr {
 
 .nav>li>a{
   padding: 10px 8%;
+}
+
+.bannerpadding>a{
+  text-decoration: none;
+  color: inherit;
 }
 
 #sidebar-footer {
