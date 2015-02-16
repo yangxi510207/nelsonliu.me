@@ -24,6 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-material-design": "~0.2.1"
+    "bootstrap-material-design": "~0.2.1",
+    "syntax-highlight": "1000ch/syntax-highlight#master"
   }
 }

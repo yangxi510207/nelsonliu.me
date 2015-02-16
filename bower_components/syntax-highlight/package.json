@@ -1,0 +1,29 @@
+{
+  "name": "syntax-highlight",
+  "version": "0.1.7",
+  "description": "Code syntax highlight element.",
+  "scripts": {
+    "start": "python -m http.server",
+    "build": "vulcanize import.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1000ch/syntax-highlight.git"
+  },
+  "keywords": [
+    "WebComponents"
+  ],
+  "author": {
+    "name": "1000ch",
+    "email": "shogo.sensui@gmail.com",
+    "web": "http://github.com/1000ch"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1000ch/syntax-highlight/issues"
+  },
+  "homepage": "https://github.com/1000ch/syntax-highlight",
+  "devDependencies": {
+    "vulcanize": "^0.7.5"
+  }
+}

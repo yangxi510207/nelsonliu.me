@@ -1,0 +1,40 @@
+{
+  "name": "syntax-highlight",
+  "description": "Code syntax highlight element.",
+  "main": "syntax-highlight.html",
+  "authors": [
+    "1000ch <shogo.sensui@gmail.com>"
+  ],
+  "homepage": "https://github.com/1000ch/syntax-highlight",
+  "license": "MIT",
+  "keywords": [
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch": "~0.3.2",
+    "highlightjs": "~8.3.0"
+  },
+  "devDependencies": {
+    "markdown.css": "~0.1.1",
+    "syntax-highlight": "~0.1.6",
+    "paper-item": "Polymer/paper-item#~0.5.2",
+    "paper-shadow": "Polymer/paper-shadow#~0.5.2"
+  },
+  "_release": "c6f78c741a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c6f78c741a7176bc11c161ffc5f4d94fc8f82931"
+  },
+  "_source": "git://github.com/1000ch/syntax-highlight.git",
+  "_target": "master",
+  "_originalSource": "1000ch/syntax-highlight",
+  "_direct": true
+}
