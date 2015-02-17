@@ -207,6 +207,10 @@ a:hover {
   color:#455A64!important
 }
 
+.nav .blog-active a {
+  color:#3f51b5!important
+}
+
 
 hr {
   border-color:#cecece;
