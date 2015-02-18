@@ -52,14 +52,14 @@ $(document).ready(function(){/* off-canvas sidebar toggle */
     $("#connectcontent").css({"display":"none"});
   });
 
-  $('#resume').click(function() {
-    $('#resume').addClass('resume-active');
-    $('#skills').removeClass('skills-active');
-    $('#projects').removeClass('projects-active');
-    $('#about').removeClass('about-active');
-    $('#connect').removeClass('connect-active');
-
-  });
+  // $('#resume').click(function() {
+  //   $('#resume').addClass('resume-active');
+  //   $('#skills').removeClass('skills-active');
+  //   $('#projects').removeClass('projects-active');
+  //   $('#about').removeClass('about-active');
+  //   $('#connect').removeClass('connect-active');
+  //
+  // });
 
   $('#connect').click(function() {
     $('#connect').addClass('connect-active');
@@ -117,19 +117,19 @@ $(document).ready(function(){/* off-canvas sidebar toggle */
     $("#connectcontent").css({"display":"none"});
   });
 
-  $('#resume-xs').click(function() {
-    $('#resume-xs').addClass('resume-active');
-    $('#skills-xs').removeClass('skills-active');
-    $('#projects-xs').removeClass('projects-active');
-    $('#about-xs').removeClass('about-active');
-    $('#connect-xs').removeClass('connect-active');
-
-    $("#aboutcontent").css({"display":"none"});
-    $("#skillscontent").css({"display":"none"});
-    $("#projectscontent").css({"display":"none"});
-    $("#resumecontent").fadeIn('slow');
-    $("#connectcontent").css({"display":"none"});
-  });
+  // $('#resume-xs').click(function() {
+  //   $('#resume-xs').addClass('resume-active');
+  //   $('#skills-xs').removeClass('skills-active');
+  //   $('#projects-xs').removeClass('projects-active');
+  //   $('#about-xs').removeClass('about-active');
+  //   $('#connect-xs').removeClass('connect-active');
+  //
+  //   $("#aboutcontent").css({"display":"none"});
+  //   $("#skillscontent").css({"display":"none"});
+  //   $("#projectscontent").css({"display":"none"});
+  //   $("#resumecontent").fadeIn('slow');
+  //   $("#connectcontent").css({"display":"none"});
+  // });
 
   $('#connect-xs').click(function() {
     $('#connect-xs').addClass('connect-active');
