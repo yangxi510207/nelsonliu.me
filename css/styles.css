@@ -187,6 +187,9 @@ html, body {
 .socialcard{
 }
 
+.alignright a:hover{
+  color:#337ab7!important
+}
 
 a:hover {
   text-decoration:underline;
