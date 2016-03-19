@@ -1,0 +1,635 @@
+\documentclass[12pt, oneside]{article} 
+\usepackage{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      
+    urlcolor=blue,
+}
+ 
+\urlstyle{same}
+
+\geometry{letterpaper, margin=0.5in} 
+\title{A survey of scikit-learn tree-related pull requests}
+\author{Nelson Liu \\
+  University of Washington \\
+  nfliu@uw.edu }
+\begin{document}
+\maketitle
+\section{Introduction}
+While reviewing the various tree-related pull requests to evaluate
+which would make good candidates for a Google Summer of Code project,
+I figured it would be prudent to keep a written log of my thoughts
+regarding the various pull requests.\\
+To find pull requests to work on, I ran a GitHub search with the
+keywords \texttt{'tree' is:pr is:open}. My search filters were
+extremely loose and they literally captured any reference of
+tree. This resulted in a lot of code regarding nearest neighbors / the
+source tree in general to pop up, but I figured that its better to
+cast a wider net to ensure that I don't miss any potential work to be
+done. The pull requests fetched are listed below in order from oldest
+to newest. I used this method of ordering because I figured that older
+pull requests are also more likely to be stale, which would make them
+good candidates for a GSoC project.
+
+\section{Tree-related pull requests and associated commentary}
+\begin{enumerate}
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/911}
+    {\#911 WIP: Covariance Updates}}\\
+  Commentary: This pull request doesn't seem too relevant, although
+  its development seems to have stalled. Last substantive comment was
+  in July 2013.
+  
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/941}
+    {\#941 Adding a pruning method to the tree}}\\
+  Commentary: This pull request seems well suited to a Google Summer of Code
+  project. Throughout the thread, the developers were in support of
+  its implementation. It's also seem to have gone quite stale, the
+  tree class has changed considerably since this PR was first written
+  and the author seems to have given up development. \textbf{All in
+    all, this seems like a great pull request to pick up for Google
+    Summer of Code}
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1386}
+    {\#1368 WIP: Implement ROC-SVM linear pairwise ranking loss with SGD}}\\
+  Commentary: This pull request deals with SGD, and is not quite
+  relevant to my proposed theme of ``tree'' as a result. Seems to have
+  gone stale, with little interest in revitalizing it from the
+  outside.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1454}
+    {\#1454 MRG+1: Add resample to preprocessing}}\\
+  Commentary: This pull request doesn't deal with the tree module,
+  although it seems mostly completed and is waiting for another review
+  before merging (@agramfort already +1'd).
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1574}
+    {\#1574 WIP: sample\_weight support}}\\
+  Commentary: This pull request doesn't deal with the tree module, and
+  seems to have gone stale with a fair amount of work left to be
+  done. Many of its ideas seem to have been proposed / implemented in
+  more recent pull requests, however (see the myriad of references at
+  the bottom of the pull request).
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1742}
+    {\#1742 MRG Training Score in Gridsearch}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1830}
+    {\#1830 MRG: Evidence Accumulation Clustering}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/1984}
+    {\#1984 Implementation of OPTICS}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2043}
+    {\#2043 OPTICS clustering}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2285}
+    {\#2285 [WIP] Earth (MARS)}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+  
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2391}
+    {\#2391 [MRG] Implemented Determinant ECOC}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2461}
+    {\#2461 [MRG] Label power set multilabel classification strategy}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2530}
+    {\#2530 [MRG] sklearn.tree.export\_dict for converting Tree
+      objects into a jsonable format}}\\
+  Commentary: This pull request is a proposal for a method for
+  converting tree objects to JSON. The associated PR discussion
+  eventually concluded that there have been no exports in the main
+  project, and that it was unfit to be in the main
+  repo. @GaelVaroquaux suggested that it was out of scope, but it
+  might be useful to have PMML export of trees from scikit-learn. This
+  has been since completed in a separate project with some relevant
+  discussion at
+  \href{https://github.com/scikit-learn/scikit-learn/issues/1596}{\#1596}.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2567}
+    {\#2567 Issue \#2559: Added normalize option to LogisticRegression}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2580}
+    {\#2580 [WIP] first cut at LambdaMART}}\\
+  Commentary: This pull request doesn't deal with the tree
+  module. Seems to have gone stale, although there appears to be some
+  lingering interest in its implementation. @mblondel did however
+  express that he has had some bad experiences with LambdaMART, and
+  that it "performs either worse or comparably to random forests or
+  gradient boosting".
+
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2784}
+    {\#2784 Liblinear Sample Weights}}\\
+  Commentary: This pull request doesn't deal with the tree module,
+  although work seems to have gone stale. It has since been picked up
+  by @mechcoder, and he has made a few PRs toward its completion.
+
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/2567}
+    {\#2567 Issue \#2559: Added normalize option to LogisticRegression}}\\
+  Commentary: This pull request doesn't deal with the tree module.
+
+  
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3306}
+    {\#3306 [[MRG] Google Summer of Code 2014: Standard Extreme Learning Machines}}\\
+  Commentary: This pull request doesn't deal with the tree module, and
+  seems mostly implemented.
+
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3346}
+    {\#3346 [WIP] Categorical split for decision tree}}\\
+  Commentary: This pull request is extremely relevant to the tree
+  module. The original author of this PR seems to have abandoned
+  development, and it was subsequently reproposed in
+  \href{https://github.com/scikit-learn/scikit-learn/pull/4899}{\#4899
+    NOCATS: Categorical splits for tree-based learners}, which is
+  still in active development.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3306}
+    {\#3306 [MRG] Google Summer of Code 2014: Standard Extreme Learning Machines}}\\
+  Commentary: This pull request doesn't deal with the tree module, and
+  seems mostly implemented.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3436}
+    {\#3436 ENH: Added Random Forest feature importance based on out
+      of bag data}}\\
+  Commentary: This pull request doesn't have any commentary from core
+  devs or even other developers, so I can't tell if it would be well
+  received as an enhancement. However, it was referenced in issue
+  \href{https://github.com/scikit-learn/scikit-learn/issues/3455}{\#3455},
+  which was subsequently picked up and seemingly abandoned in
+  \href{https://github.com/scikit-learn/scikit-learn/pull/3723}{\#3723}. \textbf{I'm
+  on the fence as to whether this would be a suitable Google Summer of Code project, as
+  it isn't quite related to trees but seems somewhat useful
+  nonetheless. It's difficult to tell without more comments on the
+  matter from core devs, particularly @amueller and @larsmans as they
+  designed the scorer API}
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3464}
+    {\#3464 Added Example for Plotting Hierarchical Clustering Dendrogram}}\\
+  Commentary: This pull request doesn't quite deal with the tree
+  module, but is nonetheless an interesting example that plots the
+  hierarchical clustering dendrogram. This is useful because
+  hierarchical cluster is one of the few clustering algorithms where
+  adding structure results in speed improvements. \textbf{This might
+    be out of the scope of my Google Summer of Code project on trees, but it's a very
+    interesting project that has stalled due to missing (now present)
+    functionality. Should be tagged as "Need Contributor", or I could
+    possibly find some time on the side to work on it.}
+
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3907}
+    {\#3907 [WIP] Adding tests for estimators implementing
+      `partial\_fit` and a few other related fixes / enhancements}}\\
+  Commentary: This pull request doesn't quite deal with the tree
+  module, and it seems like @rvraghav93 is still actively working on
+  it.
+
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/3922}
+    {\#3922 [WIP] allow nearest neighbors algorithm to be an estimator}}\\
+  Commentary: @jnothman seems to have finished most of the work on
+  this PR, but it is stalled in the review process. It seems most devs
+  are +1 on adding this. I've pinged @jnothman about the current
+  status of the pull request, and am waiting for his response.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4191}
+    {\#4191 Add Jensen-Shannon distance metric}}\\
+  Commentary: This pull request seems to have most of the core
+  functionality in place, but it's missing docs and a convincing
+  example as to why it should be included. Most of the PR discussion
+  centers around whether the Jensen-Shannon distance metric would be
+  useful for solving a real applied problem. The original contributor
+  seems to have abandoned the project, although I'm not sure there's a
+  clear consensus as to whether it would be well received.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4215}
+    {\#4215 [MRG] GBM \& meta-ensembles - support for class\_weight}}\\
+  Commentary: This pull request seems to have been abandoned, but most
+  of the work is completed. Maybe just needs some refactoring before
+  another review. Not quite relevant to the tree module, however.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4217}
+    {\#4217 [MRG] Neighbors refactor}}\\
+  Commentary: This pull request seems mostly completed, and the devs
+  were discussing how it would affect performance (the answer seems to
+  be minimally, but its not possible to tell completely yet) before it
+  went stale. Again, not quite relevant to the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4288}
+    {\#4288 [WIP] Allow nan for userdefined metric in dbscan et al}}\\
+  Commentary: This pull request seems to have been
+  abandoned. Regardless, it does not deal with the tree
+  module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4354}
+    {\#4354 [WIP] Make GridSearchCV and all estimators support sparse y}}\\
+  Commentary: @rvraghav93 is still working on this pull request, and
+  is still working on it. There is a temporary standstill because he
+  is waiting for sparse y (which he and @betatim) are working on to be
+  supported in trees before continuing.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4458}    
+    {\#4458 [MRG+1] Implement haversine metric in pairwise}}\\
+  Commentary: This pull request seems to have gone stale, but all that
+  is needed for its completion is some benchmarking. Again, not quite
+  relevant to the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4501}
+    {\#4501 [MRG] Add distance threshold on Hierarchical Clustering,
+      see \#3796}}\\
+  Commentary: This pull request seems to be mostly completed, but
+  there are still a few outstanding comments to be addressed. Doesn't
+  quite fit in the scope of a project on the tree module.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4522}
+    {\#4522 [WIP] Metrics Testing}}\\
+  Commentary: This pull request doesn't deal with the tree module, but
+  instead works with neighbors / clustering.
+
+  \item 
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4525}
+    {\#4525 [MRG+1] Listed valid metrics for neighbors algorithms}}\\
+  Commentary: This pull request doesn't work with the tree
+  module. However, it seems completed and is just waiting for a
+  few more reviews before merge.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4535}
+    {\#4535 [WIP] Fortran c order test}}\\
+  This PR seems to have gone stale, and is not quite relevant for the
+  tree module. Seems like a significant amount of work would be
+  required to get this working.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4801}
+    {\#4801 Discretization using Fayyad's MDLP stop criterion }}\\
+  This PR seems mostly complete, but it seems like most of the devs do
+  not know of suitable applications for the code. The original
+  developer is still willing to work on the code, in the case that it
+  is deemed relevant enough for inclusion.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4844}
+    {\#4844 [MRG] Add KNN strategy for imputation}}\\
+  This PR seems to have gone stale, however it seems as if its ready
+  for review and merging. Regardless, it deals more with NN than the
+  tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4848}
+    {\#4848 [MRG+1] Multioutput bagging}}\\
+  This PR seems complete, and is just waiting for a few more reviews
+  before merging.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4899}
+    {\#4899 NOCATS: Categorical splits for tree-based learners}}\\
+  Currently in active development (mostly by @rvraghav93), and very 
+  relevant to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4926}
+    {\#4926 Hdbscan}}\\
+  Comments on the PR indicate that it will not be merged into master,
+  and is best served as a related project.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4950}
+    {\#4950 Add monotonicity parameter to Gradient Boosting and
+      Decision Trees}}\\
+  This PR seems mostly complete, and doesn't cause many changes in
+  time complexity to the tree code. However, it is still debatable
+  whether this niche case is worth the added complexity in the tree
+  code. Seems like some more discussion is needed, but seems mostly
+  complete otherwise.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/4951}
+    {\#4951 DOC add official install guide in README.rst}}\\
+  Not relevant to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5099}
+    {\#5099 [WIP] Modified LSHForest to check candidates only in
+      relevant sections}}\\
+  The code seems mostly completed, and is just needing benchmarks that
+  demonstrate its benefit over the current implementation of
+  LSHForest. @jnothman ran some initial tests, however, and they
+  "don't seem to be as positive as I'd hoped." Regardless, it is more
+  related to neighbors code than the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5181}
+    {\#5181 Balanced Random Forest}}\\
+  Seems to have gone stale, but is needing documentation and tests
+  before merge. The code seems mostly complete though? This isn't
+  quite relevant to the tree module, but it \textbf{could be an
+    interesting PR to pick up on the side}.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5279}
+    {\#5279 WIP: LOF algorithm (Anomaly Detection)}}\\
+  This PR seems to still be in active development.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5333}
+    {\#5333 [MRG] pairwise\_distances outputs Nan and negative values}}\\
+  This PR seems to have gone slightly stale, but it seems mostly
+  complete and is waiting for review.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5382}
+    {\#5333 [MRG] pairwise\_distances outputs Nan and negative values}}\\
+  This PR seems to be stale, and doesn't seem too relevant to the tree code.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5414}
+    {\#5414 [MRG+1] Elkans K means}}\\
+  This PR is still in active development, and just needs some reviews
+  before it can be merged.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5460}
+    {\#5460 [MRG] convert to boolean arrays for boolean distances (ex: jaccard)}}\\
+  This PR seems to have gone slightly stale, but generally looks
+  complete. Maybe just needs a few more reviews before merging? Not
+  too relevant to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5491}
+    {\#5491 [WIP] Gaussian Process-based hyper-parameter optimization}}\\
+  This PR is still in active development.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5532}
+    {\#5532 Add `return\_std` option to ensembles}}\\
+  This PR seems to have slightly stale, but @glouppe might still be
+  working on it. Not too relevant to the tree module, moreso for
+  ensemble.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5564}
+    {\#5564 [WIP] Default dict for GridSearch}}\\
+  This PR seems to have gone stale, and isn't too relevant to the tree
+  code. \textbf{Not too relevant to a Google Summer of Code proposal on trees, but
+    could be something interesting to pick up on the side, though.}
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5593}
+    {\#5593 [MRG] ENH: Support threshold='auto' in Birch}}\\
+  @mechcoder did say he plans on finishing this PR, but there has been
+  no activity since January. Regardless, it is more relevant to the
+  cluster module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5596}
+    {\#5596 [MRG] Fix NearestNeighbors algorithm='auto' to work with
+      all supported metrics by default}}\\
+  @mechcoder gave a brief review, but the original author has yet to
+  address the comments. \textbf{This PR looks almost complete, but it
+    isn't quite relevant to the tree module. Another thing to possibly
+    work on on the side}.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5653}
+    {\#5653 [WIP] Generalized partial dependence plots}}\\
+  This PR is slightly stale as the original author is a bit busy. At
+  the moment, its more suited for ensemble / boosted methods than just
+  the decision tree. This project also seems fairly big, so it
+  is probably out of scope.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5689}
+    {\#5689 [MRG] Gradient Boosting Classifier CV}}\\
+  This PR seems to have gone slightly stale, but appears to have been
+  well received by many contributors. Not relevant to the the tree
+  module, however.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5757}
+    {\#5757 [MRG+1] fixed IsolationForest(max\_features=0.8).predict(X)
+    fails input validation}}\\
+  This PR fixes the bug at hand, but causes a memory explosion on
+  large datasets, causing it to be 5x slower. Probably needs some more
+  discussion / review before it can be merged. Again not quite
+  relevant to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5815}
+    {\#5815 \#5789 Expose base estimator iforest}}\\
+  PR seems to have gone stale, but seems like there is some
+  disagreement about how to move forward with the PR in terms of API /
+  confusion with the meaning of various parameters. Not quite relevant
+  to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5825}
+    {\#5825 [WIP] Adding Fixed Width Discretization}}\\
+  PR seems to have gone slightly stale, and it does not quite apply to
+  the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5862}
+    {\#5862 Add clarification on random forest regressor default params}}\\
+  Docfix that isn't relevant to the tree module. Needs reviewing,
+  however.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5963}
+    {\#5963 Added subsampling to RandomForest}}\\
+  PR seems to have gone stale. Hasn't been quite reviewed yet, so it's
+  hard to gauge the level of developer acceptance of the
+  feature. Regardless, this PR doesn't apply to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/5974}
+    {\#5974 [MRG] ENH Add support for missing values to Tree based Classifiers}}\\
+  @rvraghav93 is actively working on this PR.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6029}
+    {\#6029 Adding Time Series Regressors}}\\
+  Time Series is generally out of scope in scikit-learn, and this PR
+  is unlikely to be merged into master as a result.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6039}
+    {\#6039 Add mae regression tree}}\\
+  The original maintainer is not working on the PR anymore, but @vene
+  and @mechcoder are interested in taking it on. \textbf{This is
+    pretty relevant to the tree module, and perhaps would be something
+  useful to take on if @vene or @mechcoder are not already working on it.}
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6114}
+    {\#6114 Fix docstring signature mismatch in cython code}}\\
+  Docfix PR, so not quite relevant to the tree module. This is
+  probably a quick fix though, and can be pushed through pretty
+  quickly if someone decides to take it up.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6169}
+    {\#6169 BestFirstTreeBuilder should ignore tree.max\_depth}}\\
+  This is a quick bugfix in the tree module, there should probably be
+  some clearer documentation about \texttt{max\_depth} and
+  \texttt{max\_leaf\_node} and how \texttt{max\_depth} would not be
+  ignored in that case. \textbf{Probably a pretty quick fix if the
+    original auathor decides to abandon the PR}. 
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6274}
+    {\#6274 [MRG] MAINT: Make sure all tests are included with installation}}\\
+  This is a build PR, and is not relevant to the tree module.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6376}
+    {\#6376 [MRG+2] Fix for issue \#6352}}\\
+  This PR is relevant to the tree module, but it is pretty much
+  done. Maybe one more review + merge?
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6380}
+    {\#6380 WIP: Add decision tree plotting}}\\
+  This PR is relevant to the tree module, but would require fairly
+  wide modification in the API to enable functions like
+  \texttt{DecisionTreeClassifier/Regressor().plot()} and would thus
+  have to go through a full RFC and enhancement proposal. Not really
+  any strong opinions about whether it would be worth it to go through
+  with submitting a proposal yet.
+
+  \item
+  Title:
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6400}
+    {\#6400 [MRG] ENH use n\_jobs in brute-force radius\_neighbors}}\\
+  This PR is more relevant to the neighbors module than the tree
+  module. There haven't been any reviews on it yet.
+\end{enumerate}
+
+\section{Summary}
+Issues that seem fit for a project would be:
+\begin{enumerate}
+  \item
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/941}
+    {\#941 Adding a pruning method to the tree}}
+  \item
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6039}
+    {\#6039 Add mae regression tree}}
+  \item
+  \textbf{\href{https://github.com/scikit-learn/scikit-learn/pull/6169}
+    {\#6169 BestFirstTreeBuilder should ignore tree.max\_depth}}
+\end{enumerate}
+Out of these, \textbf{\#941} and \textbf{\#6039} are the large issues,
+and I believe that I could tackle \textbf{\#6169} as well if it's not
+complete by the time Google Summer of Code comes around. Additionally, I'm tentatively
+planning on taking on a few misc PR's during the summer
+(e.g. \textbf{\#5099}) and participating in code reviews / discussions
+per usual.
+\end{document}
