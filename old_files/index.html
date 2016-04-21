@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta property="og:url" content="http://www.nelsonliu.me" />
+  <meta property="og:title" content="Nelson Liu | Developer based in Orange County, California" />
+  <meta property="og:description" content="My name is Nelson Liu, and I love building things that matter." />
+  <meta property="og:image" content="http://www.nelsonliu.me/img/me.jpg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hi! I'm Nelson, and I love building things.">
+  <meta name="author" content="Nelson Liu">
+
+  <title>Nelson Liu | Developer based in Seattle, Washington</title>
+
+  <!-- Favicon Stuff -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap Material Design CSS -->
+  <link href="/bower_components/bootstrap-material-design/dist/css/material-wfont.min.css" rel="stylesheet" type="text/css">
+  <link href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css" rel="stylesheet" type="text/css">
+  <link href="/bower_components/bootstrap-material-design/dist/css/material.min.css" rel="stylesheet" type="text/css">
+
+  <!-- SweetAlert CSS -->
+  <link href="/bower_components/sweetalert/lib/sweet-alert.css" rel="stylesheet" type="text/css">
+
+  <!-- FontAwesome CSS -->
+  <link href="/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom Page CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- jQuery Version 1.11.0 -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Material Design JS -->
+  <script src="/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+  <script src="/bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+
+  <!--SweetAlert JS -->
+  <script src="/bower_components/sweetalert/lib/sweet-alert.min.js"></script>
+
+  <!--Cheet.js -->
+  <script src="/bower_components/cheet.js/cheet.min.js"></script>
+
+  <!--SyntaxHighlighter -->
+  <link rel="import" src="bower_components/syntax-highlight/syntax-highlight.html">
+
+  <!--Custom JS -->
+  <script src="js/scripts.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+    $.material.init();
+  });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="box">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <!-- sidebar -->
+        <div class="column col-sm-2 col-xs-1 sidebar-offcanvas " id="sidebar">
+          <div id = "logoimage">
+            <img src="/img/logo.png" style = "height: 100% ; width: 80% ; display:block; padding-left: 8%">
+          </div>
+          <hr id = "pictureHR">
+          <ul class="nav">
+            <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a></li>
+          </ul>
+
+          <ul class="nav hidden-xs " id="lg-menu">
+            <li id="about" class="withripple about-active active"><a href="#"><i class="fa fa-child"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</a></li>
+            <hr class="nomargin">
+            <li class="withripple" id="skills"><a href="#"><i class="fa fa-wrench"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills</a></li>
+            <hr class="nomargin">
+            <li class="withripple" id="projects"><a href="#"><i class="fa fa-flask"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</a></li>
+            <hr class="nomargin">
+            <li class="withripple" id="connect"><a href="#"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
+            <hr class="nomargin">
+            <li class="withripple" id="resume"><a href="/files/N_LIU_RESUME.pdf" target="_blank"><i class="fa fa-clipboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume</a></li>
+            <hr class="nomargin">
+            <li class="withripple" id="blog"><a href="http://blog.nelsonliu.me" target="_blank"><i class="fa fa-pencil"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
+            <hr class="nomargin">
+          </ul>
+
+          <ul class="list-unstyled hidden-xs" id="sidebar-footer">
+            <li>
+              <h6>&copy; <script type="text/javascript">
+              document.write(new Date().getFullYear());
+              </script>, Nelson Liu.</h6>
+            </li>
+          </ul>
+
+
+          <!-- tiny only nav-->
+          <ul class="nav visible-xs" id="xs-menu">
+            <li id="about-xs" class="about-active"><a href="#" class="text-center"><i class="fa fa-child"></i><span class="menuitemhide" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Me</span></a></li>
+            <li id="skills-xs"><a href="#" class="text-center"><i class="fa fa-wrench"></i><span class="menuitemhide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills</span></a></li>
+            <li id="projects-xs"><a href="#" class="text-center"><i class="fa fa-flask"></i><span class="menuitemhide" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Projects</span></a></li>
+            <li id="connect-xs"><a href="#" class="text-center"><i class="fa fa-comments"></i><span class="menuitemhide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</span></a></li>
+            <li id="resume-xs"><a href="/files/N_LIU_RESUME.pdf" target="_blank" class="text-center"><i class="fa fa-clipboard"></i><span class="menuitemhide" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume</span></a></li>
+            <li id="blog-xs"><a href="http://blog.nelsonliu.me" target="_blank" class="text-center"><i class="fa fa-pencil"></i><span class="menuitemhide" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog</span></a></li>
+          </ul>
+        </div>
+        <!-- /sidebar -->
+
+        <!-- main right col -->
+        <div class="column col-sm-10 col-xs-11" id="main">
+
+          <!-- content for the "about me page" -->
+          <div class="contentdiv" id="aboutcontent" >
+            <div class="aboutbanner banner shadow-z-2">
+              <div class="bannerpadding">
+                <h1>Hi, I'm Nelson.</h1>
+              </br>
+              <p style="color: #BAC4FF" >I love building cutting-edge software and hardware projects.</p>
+            </div>
+          </div>
+          <div class="contentpadding">
+            <h3>Some info about me</h3>
+            <p> I'm a developer from Southern California (currently living in Seattle) melding my passions for programming, computer science research, and
+              electrical engineering by creating meaningful products and services. I currently attend the University of Washington, and am hoping to major in computer science, linguistics, and statistics.</p>
+              <p>I've previously worked with <a href="http://csail.mit.edu" target="_blank">MIT CSAIL</a>'s <a href="http://groups.csail.mit.edu/infolab/" target="_blank">InfoLab group</a> on the <a href="http://start.csail.mit.edu/index.php" target="_blank">START project</a>,
+                <a href="http://www2.bren.ucsb.edu/~keller/default.htm" target="_blank">UCSB's Bren School of Environmental Science and Management</a>, and the <a href="http://netlab.cs.washington.edu/" target="_blank">University of Washington Wireless Lab</a>; my research interests are varied, and I've done both independent and supervised work in subjects ranging from brain control interfaces,
+                natural language processing, computer modeling of natural processes, and wireless power. I'm currently working on natural language processing, specifically text-based prediction of Supreme Court decisions via amicus briefs with
+                <a href="http://www.cs.cmu.edu/~nasmith/" target="_blank">Noah Smith</a> and his <a href="http://www.ark.cs.washington.edu/" target="_blank">ARK research group</a>.</p>
+              </br>
+
+            </div>
+          </div>
+          <!-- content for the skillset page -->
+          <div class="contentdiv" id="skillscontent" style="display:none;">
+            <div class="skillbanner banner shadow-z-2">
+              <div class="bannerpadding">
+                <h1>My Skillset</h1>
+              </br>
+              <p style = "color: #B9E9FF;" >What I'm great at, what I'm progressing on, and what I'm starting to learn.</p>
+            </div>
+          </div>
+          <div class="chartpadding">
+            <h3>Web Development</h3>
+            <div class="row">
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Back-End Development</div>
+                  <div class="panel-body">
+                    Flask
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    node.js
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    Ruby on Rails
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    PHP
+                    <span class="label label-danger" style="float:right;">Beginner</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Front-End Development</div>
+                  <div class="panel-body">
+                    HTML
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    CSS
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    JavaScript
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    JQuery
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Databases</div>
+                  <div class="panel-body">
+                    SQL
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    MongoDB
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Programming Languages</h3>
+            <div class="row">
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Desktop</div>
+                  <div class="panel-body">
+                    Java
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    Python
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    Ruby
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    R
+                    <span class="label label-danger" style="float:right;">Beginner</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Mobile</div>
+                  <div class="panel-body">
+                    Android
+                    <span class="label label-danger" style="float:right;">Beginner</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    iOS
+                    <span class="label label-danger" style="float:right;">Beginner</span>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+              <div class="col-sm-4" style="padding-left: 0px;">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Miscellaneous</div>
+                  <div class="panel-body">
+                    Bash
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    Git / SVN
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    Photoshop
+                    <span class="label label-success" style="float:right;">Proficient</span>
+                  </div>
+                  <hr>
+                  <div class="panel-body">
+                    UI / UX Design
+                    <span class="label label-warning" style="float:right;">Intermediate</span>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contentdiv" id="projectscontent" style="display:none;">
+          <div class="projectbanner banner shadow-z-2">
+            <div class="bannerpadding">
+              <h1>My Projects</h1>
+            </br>
+            <p style = "color: #8CCFC9;" >What I'm working on.</p>
+          </div>
+        </div>
+        <div class="contentpadding">
+          <h3>I strive to build things that are <b>intuitive</b>, <b>beautiful</b>, and <b>practical</b>.</h3>
+          <!-- Not yet
+          <p><i>Click on a card to learn more.</i></p>
+        -->
+      </br>
+      <div class = "cardcontainer">
+	<div class = "item">
+          <div class="panel panel-default">
+            <div class="panel-body hoverpanel">
+              <div class="time-period" style="float:right;">Fall 2015 - Present</div>
+              <h3><b>scikit-learn</b></h3>
+              <p>Active contributor and reviewer for the scikit-learn project.</p>
+            </br>
+            <p class="alignleft">Built With: Python</p>
+            <p class="alignright">
+              <a href="https://github.com/scikit-learn/scikit-learn" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            </p>
+            <div class="clear"></div>
+          </div>
+         </div>
+	</div>
+        <div class = "item">
+          <div class="panel panel-default">
+            <div class="panel-body hoverpanel">
+              <div class="time-period" style="float:right;">Fall 2015</div>
+              <h3><b>ASLSpeak (Best Use of Microsoft Tech / Best Use of Data @ DubHacks Fall 2015)</b></h3>
+              <p>Created a machine-learning powered sign language gesture translation tool.</p>
+            </br>
+            <p class="alignleft">Built With: Leap Motion, Python, Microsoft Azure Machine Learning</p>
+            <p class="alignright">
+              <a href="https://github.com/nelson-liu/ASLSpeak" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            </p>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+        <div class = "item">
+          <div class="panel panel-default">
+            <div class="panel-body hoverpanel">
+              <div class="time-period" style="float:right;">Fall 2015</div>
+              <h3><b>SMSiri (Built @ MHacks 6)</b></h3>
+              <p>Created an SMS-based natural language question answering service.</p>
+            </br>
+            <p class="alignleft">Built With: Python (Flask)</p>
+            <p class="alignright">
+              <a href="http://smsiri.co" target="_blank"><i class="fa fa-globe fa-2x"></i></a>
+              &nbsp;
+              <a href="https://github.com/nelson-liu/SMSiri" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            </p>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+        <div class = "item">
+          <div class="panel panel-default">
+            <div class="panel-body hoverpanel">
+              <div class="time-period" style="float:right;">Summer 2015</div>
+              <h3><b>Sandwich News (1st Place @ Hack The Dot Seattle 2015)</b></h3>
+              <p>Developed an chrome extension in 2 hours based on the theme of "Sandwich News".</p>
+            </br>
+            <p class="alignleft">Built With: node.js, JavaScript, HTML, CSS</p>
+            <p class="alignright">
+              <a href="https://sandwichnewz.herokuapp.com" target="_blank"><i class="fa fa-globe fa-2x"></i></a>
+              &nbsp;
+              <a href="https://github.com/nelson-liu/SandwichNews" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            </p>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class = "item">
+        <div class="panel panel-default">
+          <div class="panel-body hoverpanel">
+            <div class="time-period" style="float:right;">Summer 2015</div>
+            <h3><b>SoundHop (Finalist @ AngelHack Seattle 2015)</b></h3>
+            <p>Developed an Android application enabling multiple phones to play the same audio track via Wi-Fi P2P.</p>
+          </br>
+          <p class="alignleft">Built With: Android, Firebase</p>
+          <p class="alignright">
+            <a href="https://github.com/jkunzika/SoundHop" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+          </p>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class = "item">
+      <div class="panel panel-default">
+        <div class="panel-body hoverpanel">
+          <div class="time-period" style="float:right;">Spring 2015</div>
+          <h3><b>MyoDrone (Top 30 @ PennApps Winter 2015)</b></h3>
+          <p>Used the Myo and a Parrot drone to build a gesture controlled "selfie drone".</p>
+        </br>
+        <p class="alignleft">Built With: Intel Edison, node.js, Parrot AR Drone 2.0</p>
+        <p class="alignright">
+          <a href="http://vimeo.com/117117898" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+          &nbsp;
+          <a href="https://github.com/nelson-liu/MyoDrone" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        </p>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <div class = "item">
+    <div class="panel panel-default">
+      <div class="panel-body hoverpanel">
+        <div class="time-period" style="float:right;">Fall 2014</div>
+        <h3><b>Falangafone (Top 20 @ HackPrinceton Fall 2014)</b></h3>
+        <p>Use Leap Motion and your dear phalanges to interact with and meld your music in ways never seen before.</p>
+      </br>
+      <p class="alignleft">Built With: Flask, Leap Motion API, Python, Pyo, Squirrel, Electric Imp, HTML, CSS, JavaScript</p>
+      <p class="alignright">
+        <a href="http://www.instructables.com/id/Falangafone-Use-Gestures-to-Control-Your-Music/" target="_blank"><i class="fa fa-globe fa-2x"></i></a>
+        &nbsp;
+        <a href="https://github.com/mitchellgu/Falangafone" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+      </p>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div class = "item">
+  <div class="panel panel-default">
+    <div class="panel-body hoverpanel">
+      <div class="time-period" style="float:right;">Summer 2014</div>
+      <h3><b>BitStation (Improving MIT Award @ MIT BitComp 2014)</b></h3>
+      <p>A MIT Kerberos - Integrated Bitcoin wallet. Bypass unwieldy Bitcoin addresses and send money via MIT ID.</p>
+    </br>
+    <p class="alignleft">Built With: Ruby on Rails, Coinbase API, JavaScript, HTML, CSS.</p>
+    <p class="alignright">
+      <a href="https://bitstation.herokuapp.com" target="_blank"><i class="fa fa-globe fa-2x"></i></a>
+      &nbsp;
+      <a href="https://github.com/isundaylee/BitStation-App" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    </p>
+    <div class="clear"></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Not using this
+<div class="contentdiv" id="resumecontent" style="display:none;">
+resume
+</div>
+-->
+<div class="contentdiv" id="connectcontent" style="display:none;">
+  <div class="connectbanner banner shadow-z-2">
+    <div class="bannerpadding">
+      <h1>Let's Talk!</h1>
+    </br>
+    <p style = "color:#BEC4C7;">Feel free to contact me about anything!</p>
+  </div>
+</div>
+<div class="contentpadding">
+  <h3>Contact Me</h3>
+  <p><i>Click on a card for a direct link.</i></p>
+  <div class = "row">
+    <div class="col-sm-6" style="padding-left: 0px;">
+      <div class = "cardcontainer">
+        <div class = "item">
+          <div class="  panel panel-default" style="background-color: #4CAF50; text-align: center; color: white;" onclick="window.open('mailto:nfliu@uw.edu', 'emailWindow');">
+            <div class="panel-body hoverpanel socialcard">
+              <i class="fa fa-envelope-o fa-4x"></i>
+            </br>
+            <h3>nfliu [at] uw.edu</h3>
+          </br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--^end of card-->
+<div class="col-sm-6" style="padding-left: 0px;">
+  <div class = "cardcontainer">
+    <div class = "item">
+      <div class="  panel panel-default" style="background-color: #2196F3; text-align: center; color: white;" onclick="window.open('https://linkedin.com/in/nelsonliu1','mywindow');">
+        <div class="panel-body hoverpanel socialcard">
+          <i class="fa fa-linkedin-square fa-4x"></i>
+        </br>
+        <h3>linkedin.com/in/nelsonliu1</h3>
+      </br>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!--^end of row-->
+<div class = "row">
+  <div class="col-sm-6" style="padding-left: 0px;">
+    <div class = "cardcontainer">
+      <div class = "item">
+        <div class="  panel panel-default" style="background-color: #FF6F00; text-align: center; color: white;" onclick="window.open('https://github.com/nelson-liu','mywindow');">
+          <div class="panel-body hoverpanel socialcard">
+            <i class="fa fa-github fa-4x"></i>
+          </br>
+          <h3>github.com/nelson-liu</h3>
+        </br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--^end of card-->
+<div class="col-sm-6" style="padding-left: 0px;">
+  <div class = "cardcontainer">
+    <div class = "item">
+      <div class="panel panel-default" style="background-color: #D50000; text-align: center; color: white;" onclick="window.open('https://webchat.freenode.net/','mywindow');">
+        <div class="panel-body hoverpanel socialcard">
+          <i class="fa fa-comment fa-4x"></i>
+        </br>
+        <h3>nelson-liu on freenode IRC</h3>
+      </br>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!--^end of row-->
+</div>
+<!--^end of contentpadding-->
+</div>
+<!--^end of contact section-->
+<!-- /main -->
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
